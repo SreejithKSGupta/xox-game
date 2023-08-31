@@ -1,85 +1,84 @@
 :root{
-  --pcol : blue;
-  --bgcol: rgb(32, 32, 32);
-  --p1   : yellow;
-  --p2   :red;
+  --bgcol         : rgb(3, 53, 53);
+  --activecol     : rgb(12, 146, 19);
+  --passivecol    : rgb(94, 86, 86);
+  --bordcol       : rgb(13, 16, 68);
+  --bordrad       :   20px;
+  --boxcol        : rgb(255, 255, 255);
 }
-
 *{
     margin: 0px;
     padding: 0px;
+    transition-duration: 1000ms;
+    font-family: 'Segoe UI';
+    box-sizing: border-box;
+    overscroll-behavior: none;
 }
-
 body{
     width: 100vw;
-    height: 100vh;
-    background-color: var(--bgcol);
+    min-height: 100vh;
     display: flex;
+    align-items: center   ;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: center   ;
+    background-color: var(--bgcol);
 }
 #gamebox{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    width: 36vw;
-    border-radius: 20px;
-    background-color:grey;
+    width:clamp(390px,45vw,660px);
+    aspect-ratio: 1/1;
+    border-radius:var(--bordrad);
+    background-color:var(--bordcol);
+    justify-content: space-evenly;
+    align-items:center;
+}
+.row{
+    display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    padding: 20px;
+    height: 100%;
 }
-
-#gamebar{
+#gamebar,#playername{
      display: flex;
      flex-direction: row;
-     background-color: bisque;
-     border-radius: 20px;
-     width: 40vw;
+     background-color:var(--bordcol);
+     border-radius:var(--bordrad);
+     width: clamp(400px,45vw,660px);
      justify-content: space-evenly;
      align-items: center;
-     padding: 1vw;
+     padding: 10px;
+     font-size: 1rem;
+     color: #ffffff;
 }
-
 .box{
-    width: 10vw;
-    height:10vw;
-    background-color: azure;
-    border: 3px black;
-    margin: 1vw;
-    font-size: 9vw;
+    width: clamp(110px,11vw,200px);
+    aspect-ratio: 1/1;
+    background-color:var(--boxcol);
+    font-size: 5rem;
     font-weight: bold;
-    text-align: center;
-    line-height: 10vw;
-    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:var(--bordrad);
 }
-
-.playeritem{
-    width: 10vw;
-    height: 10vh;
+.playeritem,#reset{
+    width: 25%;
     background-color: var(--pcol);
-    border: 3px black;
     text-align: center;
-    line-height: 10vh;
-    border-radius: 10px;
-    font-size: 2vw;
-    color: #ffffff;
+    border-radius:var(--bordrad);
+    padding: 10px;
 }
-
 #reset{
-    width: 10vw;
-    height: 10vh;
-    background-color: var(--pcol);
-    border: 3px black;
-    text-align: center;
-    line-height: 10vh;
-    border-radius: 10px;
-    font-size: 2vw;
-    color: #ffffff;
-    background-color:orangered;
+    background-color:rgb(255, 123, 0);
 }
 #reset:hover{
-    background-color:red;
+    background-color:rgb(105, 9, 9);
     cursor: pointer;
+}
+.activeplayer{
+    background-color: var(--activecol);
+    color: white;
+    scale: 1.2;
 }
