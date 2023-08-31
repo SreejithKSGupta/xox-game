@@ -1,6 +1,10 @@
 # xox-game
 
 ## A simple XOX game made with good old HTML, CSS, JavaScript.
-![Screenshot 2023-08-31 120942](https://github.com/SreejithKSGupta/xox-game/assets/72187226/fba21e70-46ad-45d5-9922-381c08e91514)
-![Screenshot 2023-08-31 120932](https://github.com/SreejithKSGupta/xox-game/assets/72187226/85bbe03e-026c-408b-8208-ec26221173fe)
-![Screenshot 2023-08-31 120924](https://github.com/SreejithKSGupta/xox-game/assets/72187226/13da5ff3-f82b-4276-b7df-a33bc623aa5a)
+the webapp is responsive, and fast.
+
+![Screenshot 2023-08-31 200259](https://github.com/SreejithKSGupta/xox-game/assets/72187226/9c5f80df-ff34-4b26-93e1-020e05872cf7)
+![Screenshot 2023-08-31 200207](https://github.com/SreejithKSGupta/xox-game/assets/72187226/fbe79ada-1528-4c34-a8bb-492c4b1f37fd)
+![Screenshot 2023-08-31 200150](https://github.com/SreejithKSGupta/xox-game/assets/72187226/dd9a7ecf-a74d-4fa4-b45c-f8566399010a)
+![Screenshot 2023-08-31 200048](https://github.com/SreejithKSGupta/xox-game/assets/72187226/228372bf-e2a6-4fc1-8c58-b146c8783cfc)
+
