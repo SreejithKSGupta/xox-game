@@ -33,7 +33,7 @@ function boxclicked(e) {
             reset();
         }
         else if (win == 1) {
-            alert("game draw");
+            showalert("game draw");
             reset();
         }
         else {
