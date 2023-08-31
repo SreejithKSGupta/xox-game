@@ -1,0 +1,85 @@
+:root{
+  --pcol : blue;
+  --bgcol: rgb(32, 32, 32);
+  --p1   : yellow;
+  --p2   :red;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bgcol);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center   ;
+}
+#gamebox{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 36vw;
+    border-radius: 20px;
+    background-color:grey;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+}
+
+#gamebar{
+     display: flex;
+     flex-direction: row;
+     background-color: bisque;
+     border-radius: 20px;
+     width: 40vw;
+     justify-content: space-evenly;
+     align-items: center;
+     padding: 1vw;
+}
+
+.box{
+    width: 10vw;
+    height:10vw;
+    background-color: azure;
+    border: 3px black;
+    margin: 1vw;
+    font-size: 9vw;
+    font-weight: bold;
+    text-align: center;
+    line-height: 10vw;
+    border-radius: 10px;
+}
+
+.playeritem{
+    width: 10vw;
+    height: 10vh;
+    background-color: var(--pcol);
+    border: 3px black;
+    text-align: center;
+    line-height: 10vh;
+    border-radius: 10px;
+    font-size: 2vw;
+    color: #ffffff;
+}
+
+#reset{
+    width: 10vw;
+    height: 10vh;
+    background-color: var(--pcol);
+    border: 3px black;
+    text-align: center;
+    line-height: 10vh;
+    border-radius: 10px;
+    font-size: 2vw;
+    color: #ffffff;
+    background-color:orangered;
+}
+#reset:hover{
+    background-color:red;
+    cursor: pointer;
+}
