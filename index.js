@@ -26,8 +26,8 @@ function boxclicked(e) {
     e.target.style.backgroundColor = curplayer.bgcolor;
     e.target.style.color = curplayer.color;
     e.target.innerHTML = curplayer.value;
-    let win = checkwin();
     setTimeout(() => {
+        let win = checkwin();
         if (win == 2) {
             showalert(curplayer.pname + " won the game");
             reset();
@@ -39,8 +39,7 @@ function boxclicked(e) {
         else {
             toggleplayer();
         }
-    }, 100);
-        
+    }, 300);
 }
 function toggleplayer() {
     curplayer == player1 ? curplayer = player2 : curplayer = player1;
