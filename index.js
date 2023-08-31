@@ -26,10 +26,10 @@ function boxclicked(e) {
     e.target.style.backgroundColor = curplayer.bgcolor;
     e.target.style.color = curplayer.color;
     e.target.innerHTML = curplayer.value;
+    let win = checkwin();
     setTimeout(() => {
-        let win = checkwin();
         if (win == 2) {
-            alert(curplayer.pname + " won the game");
+            showalert(curplayer.pname + " won the game");
             reset();
         }
         else if (win == 1) {
@@ -39,7 +39,8 @@ function boxclicked(e) {
         else {
             toggleplayer();
         }
-    }, 300);
+    }, 100);
+        
 }
 function toggleplayer() {
     curplayer == player1 ? curplayer = player2 : curplayer = player1;
@@ -101,4 +102,12 @@ function reset() {
 }
 function gid(id) {
     return document.getElementById(id)
+}
+
+function showalert(text){
+    gid("alert").style.display="flex";
+    gid("alertmsgtxt").innerHTML=text;
+    gid("alertbtn").addEventListener("click",()=>{
+        gid("alert").style.display="none";
+    })
 }
